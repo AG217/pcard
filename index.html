@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка семейного психолога</title>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            background-color: #e5e5e5;
+            background-image: url('https://raw.githubusercontent.com/AG217/pcard/main/background1.jpg'); /* Укажите реальный URL */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        .card {
+            width: 90%;
+            max-width: 380px;
+            background-color: #fdfdfd;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            opacity: 0;
+            animation: fadeIn 1.2s ease forwards;
+            transform: translateY(20px);
+        }
+
+        .card-header {
+            background-color: #3a3f44;
+            padding: 20px;
+            color: #ffffff;
+            text-align: center;
+        }
+        .card-header h1 {
+            font-size: 1.6em;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        .card-header h2 {
+            font-size: 1em;
+            margin: 5px 0 0;
+            font-weight: normal;
+            color: #b3b3b3;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+        .card-body p {
+            margin: 10px 0;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            color: #444;
+        }
+        .icon {
+            background-color: #3a3f44;
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 0.85em;
+            margin-right: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: #3a3f44;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #2e3438;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="card-header">
+        <h1>Екатерина Ким</h1>
+        <h2>Семейный психолог</h2>
+    </div>
+    <div class="card-body">
+        <p><a href="tel:+972532755601" style="text-decoration: none; color: #444; display: flex; align-items: center;"><span class="icon">📞</span> Телефон: +972 53-275-5601</a></p>
+        <p style="display: flex; align-items: center;"><span class="icon">✉️</span> Эл. почта: slipknot7771@yandex.ru</p>
+        <a href="mailto:slipknot7771@yandex.ru?subject=Запрос на консультацию&body=Здравствуйте,%0D%0A%0D%0AМое имя:%0D%0AФамилия:%0D%0AОписание проблемы:%0D%0AУдобное время для консультации:%0D%0AКонтактный номер:%0D%0A%0D%0AС уважением," 
+           class="button">Связаться</a>
+    </div>
+</div>
+
+</body>
+</html>
